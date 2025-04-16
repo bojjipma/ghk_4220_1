@@ -128,10 +128,10 @@ export const App = () => {
           hint="Подключить"
         >
           {selected === 'На 1 месяц' ? (
-            '10 000 ₽ в месяц'
+            '5 000 ₽ в месяц'
           ) : (
             <>
-              <s>120 000 ₽</s> <span style={{ color: '#FFD57B' }}>96 000 ₽ на год</span>
+              <s>60 000 ₽</s> <span style={{ color: '#FFD57B' }}>48 000 ₽ на год</span>
             </>
           )}
         </ButtonMobile>
