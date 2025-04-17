@@ -6,9 +6,8 @@ declare global {
 }
 
 type Payload = {
-  subscription: 'month' | 'year';
-  carousel: string;
-};
+    subscription : 'month' | 'year'
+}
 
 export const sendDataToGA = async (payload: Payload) => {
   try {
@@ -18,7 +17,7 @@ export const sendDataToGA = async (payload: Payload) => {
     }-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
     await fetch(
-      'https://script.google.com/macros/s/AKfycbwKH_A70SmgSFyacS9XFhED1YEu72tg4xvMDFKJJph1hhx-RjzLfxDGBkFsO287FOJHCA/exec',
+      'https://script.google.com/macros/s/AKfycbw6o0CYq_qIyuJRMDovhn6M7qJBw7FvVq8zjEIYTdhznS-p97gNeqw2Y3AwAdQAqqoGXw/exec',
       {
         redirect: 'follow',
         method: 'POST',
